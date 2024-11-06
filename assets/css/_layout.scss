@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+body{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.774);
+
+}
+header{
+    width: auto;
+ height: 2rem;
+ padding: 1rem 2rem ;
+ background: rgba(0, 0, 0, 0.575);
+ display: flex;
+ align-items: center;
+ div{
+    font-size: xx-large;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    @media(max-width:883px){    
+                font-size: large;
+ }
+
+}
+img{
+    width:30px;
+    height:30px;
+    align-items: center;
+    @media(max-width:883){
+        width: 70px;
+        height: 70px;
+    }
+}
+}
+main{
+.sectiontxt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .txt{
+        text-align: center;
+        margin-top: 50px;
+        font-size: x-large;
+        h1{
+            color: rgb(216, 216, 216);
+        }
+        p{
+            color: rgba(143, 143, 143, 0.753);
+        }
+        @media (max-width:500px){
+            font-size: large;
+        }
+    }
+}
+.sectioncard{
+    background-color: rgb(83, 78, 78);
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 1rem;
+    padding: 2rem;
+    @media(max-width:1635px){
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(12,1fr);
+        gap: 1rem;
+        .col-5{
+            grid-column:span 4;
+            @media (max-width:1197px) {
+                grid-column: span 4;
+              }
+        }
+        .card{
+            width: 280px;
+            height: 480px;
+            img{
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+    @media(max-width:899px){
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(12,1fr);
+     
+        .col-5{
+            grid-column:span 12;
+            @media (max-width:899px) {
+                grid-column: span 12;
+              }
+        }
+        .card{
+            width: 280px;
+            height: 480px;
+            img{
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+}
+}
+.card{
+    width:300px;
+    height: 500px;
+    background-color: rgb(14, 59, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:15px;
+    .card-content{
+        h1{
+            font-size: larger;
+            text-align: center;
+        }
+        p{
+            font-size: medium;
+            text-align: justify;
+            padding-left: 2px;
+            padding-right: 2px;
+            background-color: rgb(9, 37, 1);
+            border-radius: 5px;
+        }
+            
+    
+    }
+    
+    img{
+        margin-top: 4px;
+        width: 200px;
+        height: 200px;
+        border: solid rgb(236, 236, 236);
+        border-radius: 15px;
+    }
+}
