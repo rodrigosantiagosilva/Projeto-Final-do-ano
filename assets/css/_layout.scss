@@ -21,7 +21,7 @@ header{
     margin-left: 10%;
     display: flex;
     align-items: center;
-    @media(max-width:883px){    
+    @media(max-width:944px){    
                 font-size: large;
  }
 
@@ -30,7 +30,7 @@ img{
     width:30px;
     height:30px;
     align-items: center;
-    @media(max-width:883){
+    @media(max-width:944){
         width: 70px;
         height: 70px;
     }
@@ -60,7 +60,7 @@ main{
 .sectioncard{
     background-color: rgb(83, 78, 78);
     display: flex;
-    align-items: center;
+    height: auto;
     margin: 10px;
     gap: 1rem;
     padding: 2rem;
@@ -70,8 +70,27 @@ main{
         grid-template-columns: repeat(12,1fr);
         gap: 1rem;
         .col-5{
+            grid-column:span 3;
+            @media (max-width:1635px) {
+                grid-column: span 3;
+              }
+        }
+        .card{
+            width: 280px;
+            height: 480px;
+            img{
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+    @media(max-width:1256px){
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+     
+        .col-5{
             grid-column:span 4;
-            @media (max-width:1197px) {
+            @media (max-width:1256px) {
                 grid-column: span 4;
               }
         }
@@ -84,14 +103,33 @@ main{
             }
         }
     }
-    @media(max-width:899px){
+    @media(max-width:944px){
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+     
+        .col-5{
+            grid-column:span 6;
+            @media (max-width:944px) {
+                grid-column: span 6;
+              }
+        }
+        .card{
+            width: 280px;
+            height: 480px;
+            img{
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+    @media(max-width:691px){
         display: grid;
         align-items: center;
         grid-template-columns: repeat(12,1fr);
      
         .col-5{
             grid-column:span 12;
-            @media (max-width:899px) {
+            @media (max-width:691px) {
                 grid-column: span 12;
               }
         }
@@ -116,7 +154,7 @@ main{
     border-radius:15px;
     .card-content{
         h1{
-            font-size: larger;
+           
             text-align: center;
         }
         p{
@@ -124,7 +162,7 @@ main{
             text-align: justify;
             padding-left: 2px;
             padding-right: 2px;
-            background-color: rgb(9, 37, 1);
+            color:aliceblue;
             border-radius: 5px;
         }
             

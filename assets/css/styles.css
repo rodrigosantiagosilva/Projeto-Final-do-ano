@@ -23,7 +23,7 @@ header div {
   display: flex;
   align-items: center;
 }
-@media (max-width: 883px) {
+@media (max-width: 944px) {
   header div {
     font-size: large;
   }
@@ -33,7 +33,7 @@ header img {
   height: 30px;
   align-items: center;
 }
-@media (max-width: 883) {
+@media (max-width: 944) {
   header img {
     width: 70px;
     height: 70px;
@@ -65,7 +65,7 @@ main .sectiontxt .txt p {
 main .sectioncard {
   background-color: rgb(83, 78, 78);
   display: flex;
-  align-items: center;
+  height: auto;
   margin: 10px;
   gap: 1rem;
   padding: 2rem;
@@ -78,12 +78,12 @@ main .sectioncard {
     gap: 1rem;
   }
   main .sectioncard .col-5 {
-    grid-column: span 4;
+    grid-column: span 3;
   }
 }
-@media (max-width: 1635px) and (max-width: 1197px) {
+@media (max-width: 1635px) and (max-width: 1635px) {
   main .sectioncard .col-5 {
-    grid-column: span 4;
+    grid-column: span 3;
   }
 }
 @media (max-width: 1635px) {
@@ -96,7 +96,55 @@ main .sectioncard {
     height: 180px;
   }
 }
-@media (max-width: 899px) {
+@media (max-width: 1256px) {
+  main .sectioncard {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  main .sectioncard .col-5 {
+    grid-column: span 4;
+  }
+}
+@media (max-width: 1256px) and (max-width: 1256px) {
+  main .sectioncard .col-5 {
+    grid-column: span 4;
+  }
+}
+@media (max-width: 1256px) {
+  main .sectioncard .card {
+    width: 280px;
+    height: 480px;
+  }
+  main .sectioncard .card img {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 944px) {
+  main .sectioncard {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  main .sectioncard .col-5 {
+    grid-column: span 6;
+  }
+}
+@media (max-width: 944px) and (max-width: 944px) {
+  main .sectioncard .col-5 {
+    grid-column: span 6;
+  }
+}
+@media (max-width: 944px) {
+  main .sectioncard .card {
+    width: 280px;
+    height: 480px;
+  }
+  main .sectioncard .card img {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media (max-width: 691px) {
   main .sectioncard {
     display: grid;
     align-items: center;
@@ -106,12 +154,12 @@ main .sectioncard {
     grid-column: span 12;
   }
 }
-@media (max-width: 899px) and (max-width: 899px) {
+@media (max-width: 691px) and (max-width: 691px) {
   main .sectioncard .col-5 {
     grid-column: span 12;
   }
 }
-@media (max-width: 899px) {
+@media (max-width: 691px) {
   main .sectioncard .card {
     width: 280px;
     height: 480px;
@@ -132,7 +180,6 @@ main .sectioncard {
   border-radius: 15px;
 }
 .card .card-content h1 {
-  font-size: larger;
   text-align: center;
 }
 .card .card-content p {
@@ -140,7 +187,7 @@ main .sectioncard {
   text-align: justify;
   padding-left: 2px;
   padding-right: 2px;
-  background-color: rgb(9, 37, 1);
+  color: aliceblue;
   border-radius: 5px;
 }
 .card img {
